@@ -3,14 +3,13 @@ export const LOGIN_SUCCESS = "LOGIN_SUCCESS";
 export const LOGIN_ERROR = "LOGIN_ERROR";
 
 export const loginLoading = () => {
-    type: LOGIN_LOADING
-}
+  return { type: LOGIN_LOADING };
+};
 
 export const loginSuccess = (payload) => {
-    type: LOGIN_SUCCESS,
-    payload
-}
+  return { type: LOGIN_SUCCESS, payload: payload };
+};
 
 export const loginFailure = () => {
-    type: LOGIN_ERROR
-}
+  return { type: LOGIN_ERROR };
+};
