@@ -1,0 +1,17 @@
+.imageCarousel{
+  width: 100%;
+  max-width: 650px;
+  min-width: 650px;
+  height: 450px;
+  margin: auto;
+}
+
+.slider{
+  width: 55%;
+  display: flex;
+  margin: auto;
+}
+.leftArrow,.rightArrow{
+  margin: 5px;
+  margin-top: 30%;
+}
