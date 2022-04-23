@@ -3,9 +3,11 @@ import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import GoogleIcon from '@mui/icons-material/Google';
 
-import {useEffect} from "react";
+import {useEffect, useContext} from "react";
 import { useNavigate } from 'react-router-dom';
 import { useAuthState } from "react-firebase-hooks/auth";
+// import {User} from "./../../App"
+
 
 
 // Firebase
@@ -36,22 +38,22 @@ export const Login = () => {
   const addData = () => {
     signInWithPopup(auth, provider)
     
-    //signInWithEmailAndPassword(auth, data.email, data.password)
   }
   const signout =()=>{
     auth.signOut()
     alert("singout")
-    // navigate("/dd")
     
   }
 
+//   const a = useContext(User)
+
   useEffect(() => {
     if (loading) {
-      // maybe trigger a loading screen
       return;
     }
     if (user){
         console.log(user.displayName)
+        // a.update(user.displayName)
         auth.signOut()
         navigate("/");}
   
