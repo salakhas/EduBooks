@@ -1,0 +1,64 @@
+@import "react-slideshow-image/dist/styles.css";
+
+.browseDiv{
+    margin: 20px;
+    height: fit-content;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+.discBrowseDiv{
+    height: 45px;
+    justify-content: space-between;
+    padding: 5px;
+    display: flex;
+}
+.browseDisplay{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    gap: 20px;
+    padding: 10px;
+}
+.browseDisplay>div{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+.indDivBook{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    height: 190px;
+}
+.indDivBook>div{
+    border: 1px;
+}
+.imgDiv{
+    width: 100%;
+    height: 100%;
+}
+.imgDivPic{
+    width: 100%;
+    height: 100%; 
+    max-height: 190px;
+}
+.slideFlex{
+    width: 60%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+@media (max-width: 1299px){
+    .iq-footer, body.sidebar-main .iq-footer {
+        padding: 15px 10px;
+        margin-left: 0;
+        width: 100%;
+    }
+}
+.iq-footer{
+    background: var(--iq-light-card);
+    padding: 15px;
+    -webkit-box-shadow: 0px 0px 20px 0px rgb(44 101 144 / 10%);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(44, 101, 144, 0.1);
+    box-shadow: 0px 0px 20px 0px rgb(44 101 144 / 10%);
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
