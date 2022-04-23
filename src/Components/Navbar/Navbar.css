@@ -1,0 +1,125 @@
+
+.navbar{
+    height: 87;
+}
+
+.navigationBorder{
+    border-top: 1px solid rgb(230, 230, 230);
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.homeHead{
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+.searchBarInp{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+.mMenuSubBox{
+    display: flex;
+    flex-direction: column;
+    min-width: 320px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 50%;
+    background: white;
+}
+.upperMmenu{
+    width: 100%;
+    background-color: #12D7B9;
+    max-height: 166px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.lowwerMmenu{
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+.lowwerMmenu>div {
+    margin-bottom: 1.2rem;
+}
+.lowBoxLi > li > a{
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    margin: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: #434f5a;
+}
+.lowBoxLi > li{
+    display: flex;
+    margin: 10px 0 10px -25px;
+}
+
+.partnerClaim>button {
+    display: flex;
+    cursor: pointer;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 65px;
+    height: 30px;
+    margin-top: 16px;
+}
+.aLinkUnderMenu {
+    width: 100%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-bottom: 16px;
+    padding-left: 4px;
+}
+.aDividerUnderSub {
+    margin-right: 14px;
+    width: 32px;
+    height: 32px;
+}
+.fixMarginA {
+    margin: 0;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #434f5a;
+}
+.fimnwF {
+    width: 100%;
+    display: flex;
+}
+.dcfRXK {
+    width: 100%;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.iUAJNl {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+.MIYAO {
+    margin: 0px 0px 5px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: rgb(255, 255, 255);
+}
+.gYIMCp {
+    margin: 0px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: rgb(255, 255, 255);
+}
