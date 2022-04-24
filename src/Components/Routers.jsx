@@ -1,25 +1,23 @@
-import { Route, Routes } from "react-router-dom";
-import { Home } from "./Home/Home";
-import { Login } from "../Components/Login/Login";
-// import { Register } from "../Components/Login/Login";
-// import { useNavigate } from "react-router-dom";
-// import { useEffect } from "react";
+import { Home } from "./Home/Home"
+import { Login } from "./Login/Login"
+import { Navber } from "./Navbar/Navbar"
+
+const PrivateRoute = ({isAuthenticated,children}) =>{
+    return isAuthenticated ? children : <Navigate to="/login"/>;
+}
+
+
 export const Routers = () => {
-  //   const navigate = useNavigate();
-  //   const PrivateRoute = ({ isAuthenticated, children }) => {
-  //     return isAuthenticated ? children : navigate("/login");
-  //   };
-  //   useEffect(() => {
-  //     PrivateRoute();
-  //   }, []);
-  //<Route path="/book/:id" element={<ClassDetails/>}/>
-  return (
-    <>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-      </Routes>
-    </>
-  );
-};
+    //<Route path="/book/:id" element={<ClassDetails/>}/>
+    return (
+        <>
+        <Navber/>
+            <Routes>
+                <Route path="/" element={<Home/>}/>
+                <Route path="/" element={<Home/>}/>
+                <Route path="/login" element={<Login/>} />
+                <Route path="/book/:id" element={<BookDetails/>}/>
+            </Routes>
+        </>
+    )
+}
